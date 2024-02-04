@@ -1,3 +1,6 @@
+# Git ignore file
+.gitignore
+
 # Prerequisites
 *.d
 
