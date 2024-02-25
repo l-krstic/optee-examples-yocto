@@ -1,0 +1,22 @@
+diff --git a/scripts/sign_encrypt.py b/scripts/sign_encrypt.py
+index ffca483a1..e25bfee89 100755
+--- a/scripts/sign_encrypt.py
++++ b/scripts/sign_encrypt.py
+@@ -128,9 +128,14 @@ def get_args(logger):
+ 
+ 
+ def main():
+-    from Cryptodome.Signature import pss
+-    from Cryptodome.Hash import SHA256
+-    from Cryptodome.PublicKey import RSA
++    try:
++        from Cryptodome.Signature import pss
++        from Cryptodome.Hash import SHA256
++        from Cryptodome.PublicKey import RSA
++    except ImportError:
++        from Crypto.Signature import pss
++        from Crypto.Hash import SHA256
++        from Crypto.PublicKey import RSA
+     import base64
+     import logging
+     import os
