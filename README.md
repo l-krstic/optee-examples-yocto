@@ -42,8 +42,8 @@ examples from git.
 **optee-examples_%.bbappend** is used when someone wants to build application,
 beside those on git.
 
-**IMPORTANT** Update path to external sources, according to your system, in file
-optee-examples_%.bbappend!
+&middot; Update path to external sources, according to your system, in file
+**optee-examples_%.bbappend** !
 
 **IMPORTANT** When building examples, ther are signed using:
 ```text
