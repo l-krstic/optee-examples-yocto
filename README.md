@@ -1,5 +1,4 @@
 # optee-examples-yocto
-MSc thesis repo
 
 &middot; Project is being done on i.MX8M Mini. 
 
@@ -33,21 +32,22 @@ that bypass python module errors in script sign_encrypt.py.
 build it. This recipe also requires a patch, that passes ldflags during
 linking phase.
 
-**optee-examples_3.11.0.bb** with **optee-examples.inc** is recipe that builds
+1. **optee-examples_3.11.0.bb** with **optee-examples.inc** is recipe that builds
 examples from git.
 
-**optee.inc** is used for setting up build system of optee-examples.
+2. **optee.inc** is used for setting up build system of optee-examples.
 
-**optee-examples_%.bbappend** is used when someone wants to build application,
+3. **optee-examples_%.bbappend** is used when someone wants to build application,
 beside those on git.
 
 &middot; Update path to external sources, according to your system, in file
 **optee-examples_%.bbappend** !
 
-**IMPORTANT** When building examples, ther are signed using:
+# IMPORTANT 
+When building examples, ther are signed using [default key](https://github.com/OP-TEE/optee_os/tree/master):
 ```text
 optee-os/keys/default_ta.pem
 ```
-**NEVER DEPLOY an optee_os binary with this key in production. Instead, REPLACE 
+**NEVER deploy an optee_os binary with this key in production. Instead, REPLACE 
 this key as soon as possible with a public key and keep the private part of 
 the key offline, preferably on an HSM.**
