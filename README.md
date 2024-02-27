@@ -1,4 +1,4 @@
-# faculty-master
+# optee-examples-yocto
 MSc thesis repo
 
 &middot; Project is being done on i.MX8M Mini. 
