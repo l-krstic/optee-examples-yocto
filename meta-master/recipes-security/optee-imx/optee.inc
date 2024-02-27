@@ -19,9 +19,10 @@ OPTEE_COMPILER = "${@bb.utils.contains("BBFILE_COLLECTIONS", "clang-layer", "${O
 # the optee-os build
 TA_DEV_KIT_DIR = "${STAGING_INCDIR}/optee/export-user_ta_arm64"
 
-EXTRA_OEMAKE += "V=1 \
-                 LIBGCC_LOCATE_CFLAGS=--sysroot=${STAGING_DIR_HOST} \
-                 COMPILER=${OPTEE_COMPILER} \
-                 OPTEE_CLIENT_EXPORT=${STAGING_DIR_HOST}${prefix} \
-                 TEEC_EXPORT=${STAGING_DIR_HOST}${prefix} \
-                "
+EXTRA_OEMAKE += " \
+	V=1 \
+	LIBGCC_LOCATE_CFLAGS=--sysroot=${STAGING_DIR_HOST} \
+	COMPILER=${OPTEE_COMPILER} \
+	OPTEE_CLIENT_EXPORT=${STAGING_DIR_HOST}${prefix} \
+	TEEC_EXPORT=${STAGING_DIR_HOST}${prefix} \
+"
