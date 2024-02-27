@@ -1,8 +1,7 @@
 # faculty-master
 MSc thesis repo
 
-&middot; Project is being developped on Varisicte's SOM, powered by
-the i.MX8M Mini. 
+&middot; Project is being done on i.MX8M Mini. 
 
 &middot; Yocto version is Hardknott 5.10.72.
 
