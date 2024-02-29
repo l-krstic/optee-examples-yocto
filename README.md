@@ -1,8 +1,8 @@
 # optee-examples-yocto
 
-&middot; Project is being done on i.MX8M Mini. 
-
-&middot; Yocto version is Hardknott 5.10.72.
+&middot; Project is being done on i.MX8M Mini. Yocto version is
+Hardknott 5.10.72. Host system is running Ubuntu 20.04, together
+with Linux kernel 5.15.
 
 &middot; Required changes in conf/local.conf are:
 
