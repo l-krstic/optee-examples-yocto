@@ -39,3 +39,8 @@ for dep in "${dependencies[@]}"; do
 		echo "$dep is already installed."
 	fi
 done
+
+# Generate UUID and store it in a variable
+echo
+echo "Generating UUID..."
+uuid=$(uuidgen)
