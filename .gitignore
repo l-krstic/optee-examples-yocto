@@ -1,3 +1,6 @@
+# Ignore repo
+optee-template-app/
+
 # Prerequisites
 *.d
 
