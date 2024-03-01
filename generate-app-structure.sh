@@ -48,3 +48,8 @@ uuid=$(uuidgen)
 # Clone repo with template app "my_example"
 echo
 git clone https://github.com/l-krstic/optee-template-app.git
+
+# Ask user for application name
+echo
+echo "Enter application name:"
+read app_name
