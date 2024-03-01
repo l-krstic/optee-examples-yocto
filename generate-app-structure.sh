@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Check if host system is debian-based
 echo "Checking system configuration..."
 if [ -f /etc/debian_version ]; then
@@ -62,7 +61,7 @@ sub_uuid11="${uuid_no_dashes:30}"
 
 # Ask user for application name
 echo
-echo "Enter application name:"
+echo "Enter application name(use _ to separate words, not -):"
 read app_name
 
 # Clone repo with template app "my_example"
