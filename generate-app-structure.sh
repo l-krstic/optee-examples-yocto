@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Check if host system is debian-based
 echo "Checking system configuration..."
 if [ -f /etc/debian_version ]; then
