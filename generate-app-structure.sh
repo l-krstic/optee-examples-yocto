@@ -44,3 +44,7 @@ done
 echo
 echo "Generating UUID..."
 uuid=$(uuidgen)
+
+# Clone repo with template app "my_example"
+echo
+git clone https://github.com/l-krstic/optee-template-app.git
